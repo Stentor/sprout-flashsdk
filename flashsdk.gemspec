@@ -6,14 +6,14 @@ require 'bundler'
 require 'flashsdk/module.rb'
 
 Gem::Specification.new do |s|
-  s.name                 = 'flashsdk'
+  s.name                 = 'h4oflashsdk'
   s.version              = FlashSDK::VERSION
-  s.author               = "Luke Bayes"
-  s.email                = "projectsprouts@googlegroups.com"
+  s.author               = "Guenael LABOIS - H4o Studio"
+  s.email                = "glabois@h4o-studio.com"
   s.homepage             = "http://www.adobe.com/products/flex"
   s.summary              = "Adobe Flash SDK including mxmlc, compc, asdoc, adl, adt, optimizer and fdb"
   s.description          = "The Flash SDK Rubygem is brought to you by Project Sprouts (http://projectsprouts.org)"
-  s.executables          =  ['sprout-as3', 'sprout-flex', 'flashplayer', 'flashlog']
+  s.executables          =  ['sprout-as3', 'sprout-flex','sprout-citrus', 'flashplayer', 'flashlog']
   s.post_install_message = File.read 'POSTINSTALL.rdoc'
   s.files                = Dir['**/*']
   s.files.reject!          { |fn| fn.match /.git|.svn|.DS_Store/ }

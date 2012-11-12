@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'flashsdk'
+
+generator = FlashSDK::CitrusProjectGenerator.new
+generator.parse! ARGV
+generator.execute
+

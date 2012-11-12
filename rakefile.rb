@@ -28,7 +28,7 @@ file 'pkg' do
   FileUtils.makedirs 'pkg'
 end
 
-gem_package = "flashsdk-#{FlashSDK::VERSION}.gem"
+gem_package = "h4oflashsdk-#{FlashSDK::VERSION}.gem"
 
 file "pkg/#{gem_package}" => [:clean, 'pkg'] do
   sh "gem build flashsdk.gemspec"
