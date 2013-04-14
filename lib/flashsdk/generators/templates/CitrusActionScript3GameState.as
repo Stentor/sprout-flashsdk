@@ -1,9 +1,9 @@
 package states
 {
-    import com.citrusengine.core.*;
-    import com.citrusengine.physics.box2d.*;
-    import com.citrusengine.objects.platformer.box2d.*;
-    import com.citrusengine.math.*;
+    import citrus.core.*;
+    import citrus.physics.box2d.*;
+    import citrus.objects.platformer.box2d.*;
+    import citrus.math.*;
     import flash.display.*;
     
     public class GameState extends State
@@ -29,7 +29,7 @@ package states
             hero.x=320;
             hero.y=200;
             
-            view.setupCamera(hero, new MathVector(400,300));
+            view.camera.setUp(hero, new MathVector(400,300));
             
             var platform:Platform=new Platform('platform',{width: 1000, height: 20});
             add(platform);

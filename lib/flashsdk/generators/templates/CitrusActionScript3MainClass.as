@@ -1,6 +1,6 @@
 package <%= package_name %>
 {
-    import com.citrusengine.core.*;
+    import citrus.core.*;
     import states.*;
 
     [SWF(width='800', height='600')]
